@@ -33,7 +33,6 @@ describe 'unauthenticated pages' do
     end
 
     it 'has short bios for Bobby and Katy' do
-      pending 'Hahaha I said Bobby drools'
       visit '/about'
       expect(page).to have_text 'Katy rules'
       expect(page).to have_text 'Bobby drools'
