@@ -29,7 +29,6 @@ describe 'unauthenticated pages' do
 
   context 'about us' do
     it 'is a page available from /about' do
-      pending 'Have fun making a new page'
       expect { visit '/about' }.to_not raise_error
     end
 
