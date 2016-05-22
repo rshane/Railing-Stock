@@ -58,4 +58,6 @@ Rails.application.routes.draw do
   get 'index' => 'pages#index'
 
   get 'about' => 'pages#about'
+
+  get '/' => 'pages#index'
 end
