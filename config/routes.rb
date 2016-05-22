@@ -56,4 +56,6 @@ Rails.application.routes.draw do
 
 #when get  site_URL\index call index on the pages controller
   get 'index' => 'pages#index'
+
+  get 'about' => 'pages#about'
 end
