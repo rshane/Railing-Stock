@@ -20,5 +20,11 @@ describe 'unauthenticated pages' do
       expect(page).to have_text 'This is a new paragraph! Number 4'
       expect(page).to have_text 'This is a new paragraph! Number 5'
     end
+
+    it 'Features an image of Sophie' do
+      pending "Go for it Bobby" 
+      visit '/index'
+      expect(page.html).to match %r(<img src="/assets/sophie.*\.jpg" [^>]*>)
+    end
   end
 end
