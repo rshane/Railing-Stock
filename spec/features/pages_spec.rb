@@ -22,7 +22,6 @@ describe 'unauthenticated pages' do
     end
 
     it 'Features an image of Sophie' do
-      pending "Go for it Bobby" 
       visit '/index'
       expect(page.html).to match %r(<img src=\"/assets/sophie.*\.jpg\" [^>]*>)
     end
