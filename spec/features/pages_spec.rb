@@ -27,4 +27,18 @@ describe 'unauthenticated pages' do
       expect(page.html).to match %r(<img src="/assets/sophie.*\.jpg" [^>]*>)
     end
   end
+
+  context 'about us' do
+    it 'is a page available from /about' do
+      pending 'Have fun making a new page'
+      expect { visit '/about' }.to_not raise_error
+    end
+
+    it 'has short bios for Bobby and Katy' do
+      pending 'Hahaha I said Bobby drools'
+      visit '/about'
+      expect(page).to have_text 'Katy rules'
+      expect(page).to have_text 'Bobby drools'
+    end
+  end
 end
